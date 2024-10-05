@@ -6,9 +6,7 @@
 <link href="../../css/general.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body> 
-      <addstyle="background-colour:Black;">
-            
+<body style="background-colour:#000000;">            
 <div id="container_3col">
 
 <form action="<?php echo $editFormAction; ?>" id="check_in" name="check_in" method="POST">
