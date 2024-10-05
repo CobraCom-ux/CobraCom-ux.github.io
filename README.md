@@ -11,18 +11,16 @@
 
 <form action="<?php echo $editFormAction; ?>" id="check_in" name="check_in" method="POST">
       
-      <table width="670" border="10" cellspacing="640" cellpadding="5">
+      <table width="670" border="10" cellspacing="640" cellpadding="0">
       <tr>
-        <th> </th>
-        <td> </td>
         <th> </th>
         <td> </td>
       </tr>
       <tr>
-        <th width="640">First Name:</th>
+        <th width="660">First Name:</th>
         </tr>
         <tr>
-        <td width="640"><input type="text" name="First Name" id="First Name" /></td>
+        <td width="660"><input type="text" name="First Name" id="First Name" /></td>
         </tr>
         <th></th>
         <td></td>
@@ -35,18 +33,20 @@
       <tr>
         <th> </th>
         <td> </td>
-        <th> </th>
-        <td> </td>
       </tr>
       <tr>
         <th>Phone Number:</th>
+        </tr>
+        <tr>
         <td><input type="text" name="Phone Number" id="Phone Number" /></td>
+        </tr>
+        <tr>
         <th>Age:</th>
+        </tr>
+        <tr>
         <td><input type="text" name="Age" id="Age" /></td>
       </tr>
       <tr>
-        <th> </th>
-        <td> </td>
         <th> </th>
         <td> </td>
       </tr>
