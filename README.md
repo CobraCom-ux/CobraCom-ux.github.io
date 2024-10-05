@@ -11,7 +11,7 @@
 
 <form action="<?php echo $editFormAction; ?>" id="check_in" name="check_in" method="POST">
       
-      <table width="670" border="0" cellspacing="0" cellpadding="0">
+      <table width="670" border="10" cellspacing="640" cellpadding="5">
       <tr>
         <th> </th>
         <td> </td>
