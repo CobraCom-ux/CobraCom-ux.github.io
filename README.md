@@ -19,10 +19,10 @@
         <td> </td>
       </tr>
       <tr>
-        <th width="136">First Name:</th>
-        <td width="192"><input type="text" name="First Name" id="First Name" /></td>
-        <th width="167">Last Name:</th>
-        <td width="160"><input type="text" name="Last Name" id="Last Name" /></td>
+        <th width="640">First Name:</th>
+        <td width="640"><input type="text" name="First Name" id="First Name" /></td>
+        <th width="640">Last Name:</th>
+        <td width="640"><input type="text" name="Last Name" id="Last Name" /></td>
       </tr>
       <tr>
         <th> </th>
