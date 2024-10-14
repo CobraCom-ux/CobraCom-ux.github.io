@@ -1,112 +1,38 @@
-
-
+<html>
+<form>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Check in/out</title>
-<link href="../../css/general.css" rel="stylesheet" type="text/css" />
+<title>GET YOURSELF INSURED</title>
 </head>
-
-<body style="background-colour:#000000;">            
-<div id="container_3col">
-
-<form action="<?php echo $editFormAction; ?>" id="check_in" name="check_in" method="POST">
-      
-      <table width="670" border="10" cellspacing="640" cellpadding="0">
-      <tr>
-        <th> </th>
-        <td> </td>
-      </tr>
-      <tr>
-        <th width="660">First Name:</th>
-        </tr>
-        <tr>
-        <td width="660"><input type="text" name="First Name" id="First Name" /></td>
-        </tr>
-        <th></th>
-        <td></td>
-        <tr>
-        <th width="640">Last Name:</th>
-        </tr>
-        <tr>
-        <td width="640"><input type="text" name="Last Name" id="Last Name" /></td>
-      </tr>
-      <tr>
-        <th> </th>
-        <td> </td>
-      </tr>
-      <tr>
-        <th>Phone Number:</th>
-        </tr>
-        <tr>
-        <td><input type="text" name="Phone Number" id="Phone Number" /></td>
-        </tr>
-        <tr>
-        <th>Age:</th>
-        </tr>
-        <tr>
-        <td><input type="text" name="Age" id="Age" /></td>
-      </tr>
-      <tr>
-        <th> </th>
-        <td> </td>
-      </tr>
-      <tr>
-        <th>Date of Birth:</th>
-        <td><input type="text" name="Date of Birth" id="Date of Birth" /></td>
-        <th>Address:</th>
-        <td><input type="Number/Number/Number" name="Date of Birth" id="Date of Birth" /></td>
-      </tr>
-      <tr>
-        <th> </th>
-        <td> </td>
-        <th> </th>
-        <td> </td>
-      </tr>
-      <tr>
-        <th>City:</th>
-        <td><input type="text" name="City" id="City" /></td>
-        <th>State#</th>
-        <td><input type="text" name="departdate" id="departdate" /></td>
-      </tr>
-      <tr>
-        <th> </th>
-        <td> </td>
-        <th> </th>
-        <td> </td>
-      </tr>
-      <tr>
-        <th>Zip-Code:</th>
-        <td><input type="Number" name="Zip-Code" id="Zip-Code" /></td>
-        <th>Email Address:</th>
-        <td><input type="text" name="Email Address" id="Email Address" /></td>
-      </tr>
-      <tr>
-        <th> </th>
-        <td> </td>
-        <th> </th>
-        <td> </td>
-      </tr>
-      <tr>
-        <th>Email Address:</th>
-        <td><input type="text" name="emailaddress" id="emailaddress" /></td>
-        <th>Total:</th>
-        <td><input type="text" name="total" id="total" /></td>
-      </tr>
-      <tr>
-        <th> </th>
-        <td> </td>
-        <th> </th>
-        <td> </td>
-      </tr>
-      <tr>
-       
-        <th><input type="hidden" name="id" id="id" /></th>
-<td><input type="submit" name="button" id="button" value="Submit" /></td>
-
-      </tr>
-    </table>
-      <input type="hidden" name="MM_insert" value="check_in" />
+<tr>
+<label>First Name</lable>
+</tr>
+<tr>
+<input type="text" name="forename">
+</tr>
+<tr>
+<lable>Last Name,/lable>
+</tr>
+<tr>
+<iput type="text" name="surname">
+</tr>
+<tr>
+<lable>Phone Number</lable>
+</tr>
+<tr>
+<input type="number" name="Phone Number">
+</tr>
+<tr>
+<lable>Zip-Code</lable>
+</tr>
+<tr>
+<input type="number" name="Zip-Code">
+</tr>
+<tr>
+<input type="checkbox" <ins>
+By checking this box, you represent that you are 18+ years of age and agree to the Privacy Policy and Terms & Conditions. By selecting the above checkbox, you provide your express written consent for a licensed sales agent associated with medicarease.com to contact you at the number you provided, even if it is listed on the National Do Not Call Registry. You agree to receive telephonic sales and marketing calls and text messages using an automated system for dialing or selecting telephone numbers, AI generative voice calls, prerecorded messages, or emails regarding products or services, including Medicare Supplement, Medicare Advantage, Prescription Drug insurance plans, and other health-related services. Calls and messages are for marketing purposes, and cellular charges may apply. Your consent does not impact your eligibility to enroll in a plan, and you can change your permission preferences at any time by contacting Medicarease.com. You understand that this request was initiated by you and is an unscheduled contact request, constituting your affirmative consent to be contacted in compliance with all federal and state telemarketing and Do-Not-Call laws. Licensed Sales Agents are not connected with or endorsed by the U.S. government or the federal Medicare program. To receive quotes without providing consent, please call (TTY 711) (888) 431-1104. Please note this is a solicitation for insurance.
+</ins>>
+</tr>
+<tr>
+<input type="Submit name="submit">
+</tr>
 </form>
-</div> 
-</body>
-</html>
