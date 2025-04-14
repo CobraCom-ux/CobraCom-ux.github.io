@@ -235,5 +235,18 @@
   <footer>
     <p>&copy; 2025 Drevanox. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Smooth scroll on nav links
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
