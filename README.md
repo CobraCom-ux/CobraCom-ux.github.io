@@ -118,6 +118,31 @@
       from { transform: translateY(-50px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
     }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 2rem auto;
+      gap: 1rem;
+    }
+    form input, form textarea {
+      padding: 0.75rem;
+      border-radius: 5px;
+      border: 1px solid #444;
+      font-family: 'Roboto Slab', serif;
+    }
+    form button {
+      background-color: crimson;
+      color: #000;
+      border: none;
+      padding: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #a00000;
+    }
   </style>
 </head>
 <body>
@@ -130,7 +155,6 @@
   </header>
 
   <nav>
-    <a href="#main">Home</a>
     <a href="#started">How We Started</a>
     <a href="#special">What's Special</a>
     <a href="#choose">Why Choose Us</a>
@@ -139,11 +163,6 @@
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
-
-  <section id="main">
-    <h2>Main Page</h2>
-    <p>Welcome to Drevanox. We are the forge behind the future.</p>
-  </section>
 
   <section id="started">
     <h2>How We Started</h2>
@@ -197,9 +216,15 @@
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: contact@drevanox.com</p>
-    <p>Phone: +1 234 567 8900</p>
-    <p>Location: Everywhere innovation burns bright.</p>
+    <form>
+      <input type="text" placeholder="First Name" required />
+      <input type="text" placeholder="Last Name" required />
+      <input type="text" placeholder="Skype ID" required />
+      <input type="text" placeholder="Contact Number" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Your Comment" rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
   </section>
 
   <footer>
