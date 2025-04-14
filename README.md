@@ -10,34 +10,77 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: #000;
       color: #fff;
+      background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
     }
     header, nav, section, footer {
       padding: 2rem;
     }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    header img {
+      height: 100px;
+    }
     nav {
-      background-color: #111;
+      background-color: #1a1a1a;
       display: flex;
       justify-content: space-around;
+      border-top: 2px solid crimson;
+      border-bottom: 2px solid crimson;
     }
     nav a {
       color: crimson;
       text-decoration: none;
       font-weight: bold;
+      padding: 0.5rem 1rem;
+    }
+    nav a:hover {
+      background-color: crimson;
+      color: #000;
     }
     section {
       min-height: 100vh;
       border-bottom: 1px solid #333;
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+    h2 {
+      color: crimson;
+    }
+    blockquote {
+      font-style: italic;
+      border-left: 4px solid crimson;
+      padding-left: 1rem;
+      color: #ccc;
     }
     footer {
       background-color: #111;
       text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #333;
+    }
+    .visual-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .visual-section img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border: 2px solid crimson;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>DREVANOX</h1>
-    <p>Forged in Eternity. Focused on You.</p>
+    <img src="DREVANOX LOGO.png" alt="Drevanox Logo" />
+    <div>
+      <h1 style="color: crimson;">DREVANOX</h1>
+      <p style="color: #ccc;">Forged in Eternity. Focused on You.</p>
+    </div>
   </header>
 
   <nav>
@@ -54,6 +97,10 @@
   <section id="main">
     <h2>Main Page</h2>
     <p>Welcome to Drevanox. We are the forge behind the future.</p>
+    <div class="visual-section">
+      <img src="https://images.unsplash.com/photo-1549921296-3a3b5df2bb99" alt="Futuristic Design" />
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Mystical Technology" />
+    </div>
   </section>
 
   <section id="started">
