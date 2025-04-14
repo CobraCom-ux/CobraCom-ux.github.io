@@ -12,8 +12,15 @@
       font-family: 'Roboto Slab', serif;
       color: #fff;
       background-color: #000;
-      background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+      background-image: url('https://www.transparenttextures.com/patterns/black-linen.png');
+      animation: fadeIn 2s ease-in;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
     header {
       padding: 2rem;
       display: flex;
@@ -24,6 +31,11 @@
     }
     header img {
       height: 120px;
+      animation: zoomIn 1s ease-in-out;
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
     }
     header h1 {
       font-family: 'Cinzel', serif;
@@ -54,6 +66,7 @@
       border-bottom: 1px solid #333;
       background-color: rgba(0, 0, 0, 0.85);
       padding: 2rem;
+      animation: fadeIn 1.5s ease-in;
     }
     h2 {
       color: crimson;
@@ -82,6 +95,10 @@
       height: auto;
       border: 2px solid crimson;
       border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .visual-section img:hover {
+      transform: scale(1.05);
     }
     .quote-text {
       font-family: 'Cinzel', serif;
@@ -89,12 +106,17 @@
       text-align: center;
       font-size: 2rem;
       margin-top: 30vh;
+      animation: slideIn 2s ease-in-out;
     }
     .quote-author {
       text-align: center;
       font-size: 1.2rem;
       margin-top: 1rem;
       color: crimson;
+    }
+    @keyframes slideIn {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
   </style>
 </head>
