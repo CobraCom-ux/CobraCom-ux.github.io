@@ -3,124 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Drevanox | Modern Support. Classic Service.</title>
+  <title>Drevanox</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0f0f0f;
-      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
     }
-    header {
-      background-color: #1a1a1a;
+    header, nav, section, footer {
       padding: 2rem;
-      text-align: center;
-      border-bottom: 2px solid #ff6a00;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-      color: #ff6a00;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #d0d0d0;
     }
     nav {
-      background-color: #1a1a1a;
-      padding: 1rem;
-      text-align: center;
+      background-color: #111;
+      display: flex;
+      justify-content: space-around;
     }
     nav a {
-      margin: 0 1rem;
-      color: #ffffff;
+      color: crimson;
       text-decoration: none;
       font-weight: bold;
     }
-    nav a:hover {
-      color: #ff6a00;
-    }
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem;
-      background-image: linear-gradient(to right, #0f0f0f, #1a1a1a);
-    }
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.1rem;
-      color: #b0b0b0;
-    }
-    .section {
-      padding: 3rem 2rem;
-      background-color: #121212;
-    }
-    .section h3 {
-      font-size: 1.8rem;
-      color: #ff6a00;
-      margin-bottom: 1rem;
-    }
-    .section p {
-      color: #cccccc;
-      line-height: 1.6;
+    section {
+      min-height: 100vh;
+      border-bottom: 1px solid #333;
     }
     footer {
-      background-color: #1a1a1a;
-      padding: 2rem;
+      background-color: #111;
       text-align: center;
-      font-size: 0.9rem;
-      color: #888;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Drevanox</h1>
-    <p>Modern Support. Classic Service.</p>
+    <h1>DREVANOX</h1>
+    <p>Forged in Eternity. Focused on You.</p>
   </header>
 
   <nav>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
+    <a href="#main">Home</a>
+    <a href="#started">How We Started</a>
+    <a href="#special">What's Special</a>
+    <a href="#choose">Why Choose Us</a>
+    <a href="#clients">Clients' Perspective</a>
+    <a href="#quote">Quote</a>
+    <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section class="hero">
-    <h2>Empowering Connections. Delivering Excellence.</h2>
-    <p>Drevanox isn’t just a brand—it’s a movement redefining support, one connection at a time.</p>
+  <section id="main">
+    <h2>Main Page</h2>
+    <p>Welcome to Drevanox. We are the forge behind the future.</p>
   </section>
 
-  <section id="services" class="section">
-    <h3>Our Services</h3>
-    <p>
-      We provide cutting-edge support solutions rooted in timeless values. From
-      advanced customer service systems to next-gen communication tools, Drevanox
-      is your gateway to operational excellence.
-    </p>
+  <section id="started">
+    <h2>How We Started</h2>
+    <p>Drevanox was born from ambition, built on grit, and fueled by the fire of innovation...</p>
   </section>
 
-  <section id="about" class="section">
-    <h3>About Drevanox</h3>
-    <p>
-      Born from a vision of intense clarity and timeless professionalism, Drevanox
-      is a brand forged in excellence. Our mission? To honor the essence of classic
-      service while innovating relentlessly in the digital era. We serve with power,
-      presence, and purpose.
-    </p>
+  <section id="special">
+    <h2>What's Special About Us</h2>
+    <p>We mix mythic energy with modern execution. No fluff, just results that speak for themselves.</p>
   </section>
 
-  <section id="contact" class="section">
-    <h3>Contact Us</h3>
-    <p>
-      Let’s build something legendary. Reach out to us at <a href="mailto:info@drevanox.com" style="color: #ff6a00; text-decoration: none;">info@drevanox.com</a>
-      or follow us on LinkedIn.
-    </p>
+  <section id="choose">
+    <h2>Why Should People Choose Us?</h2>
+    <p>Because we're more than a service — we're an experience crafted to endure.</p>
+  </section>
+
+  <section id="clients">
+    <h2>Why Our Clients Agree to Work for Us</h2>
+    <p>They don’t just stay — they advocate. They believe in what we build together.</p>
+  </section>
+
+  <section id="quote">
+    <h2>Featured Quote</h2>
+    <blockquote>
+      "Here you’ll add a powerful quote that represents Drevanox’s philosophy."
+    </blockquote>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <p>“Drevanox changed the way we do business.” — A Satisfied Partner</p>
+    <p>“Unmatched clarity and results.” — Another Happy Client</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@drevanox.com</p>
+    <p>Phone: +1 234 567 8900</p>
+    <p>Location: Everywhere innovation burns bright.</p>
   </section>
 
   <footer>
-    &copy; 2025 Drevanox. All rights reserved.
+    <p>&copy; 2025 Drevanox. All rights reserved.</p>
   </footer>
 </body>
 </html>
