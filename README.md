@@ -165,16 +165,23 @@
   </nav>
 
   <section id="started">
-    <h2>How We Started</h2>
-    <p>Drevanox was born from ambition, built on grit, and fueled by the fire of innovation...</p>
+    <h2>WE STARTED SMALL</h2>
+    <p>Starting from 5 Employees to 500 Employees,Drevanox provides exceptional Customer support to direct agencies in US,UK and Australia with over 500,000 satisfied prospects holding 95% success rate......</p>
     <div class="visual-section">
-      <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769" alt="Journey" />
+      <img src="[https://images.unsplash.com/photo-1535223289827-42f1e9919769](https://www.google.com/imgres?q=Contact%20center%20pictures&imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F8867482%2Fpexels-photo-8867482.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-yankrukov-8867482.jpg%26fm%3Djpg&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fcall%2520center%2F&docid=alGk7nPw0fNtvM&tbnid=KNA6kT5XVq57uM&vet=12ahUKEwi1wMmf6daMAxV2mZUCHV8LH2oQM3oECCQQAA..i&w=5079&h=3386&hcb=2&ved=2ahUKEwi1wMmf6daMAxV2mZUCHV8LH2oQM3oECCQQAA)" alt="Journey" />
     </div>
   </section>
 
   <section id="special">
     <h2>What's Special About Us</h2>
-    <p>We mix mythic energy with modern execution. No fluff, just results that speak for themselves.</p>
+    <p>QUALITY Comlaint
+Our reps make sure that we are providing  convertive prospects ensuring Quality measures.
+
+Bulk-in Volume
+Generating over 100,000 prospects annually.
+
+High Conversion
+Our prospects don’t just take information, they buy it too.</p>
     <div class="visual-section">
       <img src="https://images.unsplash.com/photo-1556742400-b5c05c9b84b8" alt="Special Approach" />
     </div>
@@ -182,7 +189,15 @@
 
   <section id="choose">
     <h2>Why Should People Choose Us?</h2>
-    <p>Because we're more than a service — we're an experience crafted to endure.</p>
+    <p>customized features
+“Your campaign your Regulations”
+However you want your work done, we can do it.
+    
+    ease of use
+No technicalities, simple process.
+
+24/7 Service
+While working in all 3 markets, we’re available 24/7 to ensure ops are running smmothly.</p>
     <div class="visual-section">
       <img src="https://images.unsplash.com/photo-1605810230434-7631cf222b5c" alt="Why Us" />
     </div>
