@@ -171,15 +171,15 @@
 
   <section id="started">
     <h2>How We Started</h2>
-    <p>Drevanox was born from ambition, built on grit, and fueled by the fire of innovation...</p>
+    <p>Started from a team of 5 to a team of 500, Drevanox provides exceptional services across US, UK & Austrialia...</p>
     <div class="visual-section">
-      <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769" alt="Journey" />
+      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcherryberryrms.com%2Fthe-vital-role-of-restaurant-call-center-in-lahore-pakistan%2F&psig=AOvVaw2RDm4pLYZLD-3y3QYEFwj2&ust=1744726483847000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOCcuuja14wDFQAAAAAdAAAAABAE" alt="Journey" />
     </div>
   </section>
 
   <section id="special">
     <h2>What's Special About Us</h2>
-    <p>We mix mythic energy with modern execution. No fluff, just results that speak for themselves.</p>
+    <p>We Operate 24/7 to provide seemless profit to our clients and partners.</p>
     <div class="visual-section">
       <img src="https://images.unsplash.com/photo-1556742400-b5c05c9b84b8" alt="Special Approach" />
     </div>
