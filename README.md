@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Drevanox</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto+Slab&display=swap');
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Roboto Slab', serif;
       background-color: #000;
       color: #fff;
-      background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+      background-image: url('https://www.transparenttextures.com/patterns/dark-fish-skin.png');
     }
     header, nav, section, footer {
       padding: 2rem;
@@ -19,9 +21,17 @@
       display: flex;
       align-items: center;
       gap: 1rem;
+      background: radial-gradient(circle at center, #111 0%, #000 100%);
+      border-bottom: 2px solid crimson;
     }
     header img {
-      height: 100px;
+      height: 120px;
+    }
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      color: crimson;
+      margin: 0;
     }
     nav {
       background-color: #1a1a1a;
@@ -35,6 +45,7 @@
       text-decoration: none;
       font-weight: bold;
       padding: 0.5rem 1rem;
+      transition: all 0.3s ease-in-out;
     }
     nav a:hover {
       background-color: crimson;
@@ -47,6 +58,7 @@
     }
     h2 {
       color: crimson;
+      font-family: 'Cinzel', serif;
     }
     blockquote {
       font-style: italic;
@@ -78,8 +90,8 @@
   <header>
     <img src="DREVANOX LOGO.png" alt="Drevanox Logo" />
     <div>
-      <h1 style="color: crimson;">DREVANOX</h1>
-      <p style="color: #ccc;">Forged in Eternity. Focused on You.</p>
+      <h1>DREVANOX</h1>
+      <p style="color: #ccc; font-family: 'Roboto Slab', serif;">Forged in Eternity. Focused on You.</p>
     </div>
   </header>
 
