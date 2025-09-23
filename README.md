@@ -1,252 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Drevanox</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto+Slab&display=swap');
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
 
-    body {
-      margin: 0;
-      font-family: 'Roboto Slab', serif;
-      color: #fff;
-      background-color: #000;
-      background-image: url('https://www.transparenttextures.com/patterns/black-linen.png');
-      animation: fadeIn 2s ease-in;
-    }
+export default function LandingPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    insuranceType: "",
+  });
 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+  const insurances = [
+    { name: "Final Expense Insurance", desc: "Protect your loved ones with peace of mind." },
+    { name: "Medicare Plans", desc: "Comprehensive healthcare coverage for seniors." },
+    { name: "Auto Insurance", desc: "Drive with confidence knowing you’re covered." },
+    { name: "Affordable Care Act (ACA)", desc: "Affordable health insurance options for all." },
+    { name: "Indexed Universal Life (IUL)", desc: "Secure your future with life insurance + growth." },
+    { name: "Home Insurance", desc: "Protect your home, family, and valuables." },
+  ];
 
-    header {
-      padding: 2rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      background: radial-gradient(circle at center, #111 0%, #000 100%);
-      border-bottom: 2px solid crimson;
-    }
-    header img {
-      height: 120px;
-      animation: zoomIn 1s ease-in-out;
-    }
-    @keyframes zoomIn {
-      from { transform: scale(0.5); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
-    }
-    header h1 {
-      font-family: 'Cinzel', serif;
-      font-size: 3rem;
-      color: crimson;
-      margin: 0;
-    }
-    nav {
-      background-color: #1a1a1a;
-      display: flex;
-      justify-content: space-around;
-      border-top: 2px solid crimson;
-      border-bottom: 2px solid crimson;
-    }
-    nav a {
-      color: crimson;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 0.5rem 1rem;
-      transition: all 0.3s ease-in-out;
-    }
-    nav a:hover {
-      background-color: crimson;
-      color: #000;
-    }
-    section {
-      min-height: 100vh;
-      border-bottom: 1px solid #333;
-      background-color: rgba(0, 0, 0, 0.85);
-      padding: 2rem;
-      animation: fadeIn 1.5s ease-in;
-    }
-    h2 {
-      color: crimson;
-      font-family: 'Cinzel', serif;
-    }
-    blockquote {
-      font-style: italic;
-      border-left: 4px solid crimson;
-      padding-left: 1rem;
-      color: #ccc;
-    }
-    footer {
-      background-color: #111;
-      text-align: center;
-      padding: 2rem;
-      border-top: 1px solid #333;
-    }
-    .visual-section {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .visual-section img {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      border: 2px solid crimson;
-      border-radius: 10px;
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    }
-    .visual-section img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px crimson;
-    }
-    .quote-text {
-      font-family: 'Cinzel', serif;
-      font-weight: bold;
-      text-align: center;
-      font-size: 2.5rem;
-      margin-top: 30vh;
-      animation: slideIn 2s ease-in-out;
-      text-shadow: 0 0 10px crimson;
-    }
-    .quote-author {
-      text-align: center;
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      color: crimson;
-    }
-    @keyframes slideIn {
-      from { transform: translateY(-50px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 500px;
-      margin: 2rem auto;
-      gap: 1rem;
-      animation: fadeIn 2s ease;
-    }
-    form input, form textarea {
-      padding: 0.75rem;
-      border-radius: 5px;
-      border: 1px solid #444;
-      font-family: 'Roboto Slab', serif;
-      background-color: #222;
-      color: #fff;
-    }
-    form button {
-      background-color: crimson;
-      color: #000;
-      border: none;
-      padding: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    form button:hover {
-      background-color: #a00000;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="https://cdn.openai.com/chat-assets/DREVANOX%20LOGO.png" alt="Drevanox Logo" />
-    <div>
-      <h1>DREVANOX</h1>
-      <p style="color: #ccc; font-family: 'Roboto Slab', serif;">Forged in Eternity. Focused on You.</p>
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Journaya Integration Placeholder
+    console.log("Form submitted", formData);
+    alert("Form submitted with Journaya integration!");
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 text-gray-900">
+      {/* Hero Section */}
+      <section className="text-center py-20 px-6 bg-blue-700 text-white">
+        <motion.h1
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-4xl md:text-6xl font-bold"
+        >
+          Get Yourself Insured
+        </motion.h1>
+        <p className="mt-4 text-lg md:text-2xl">
+          Affordable. Reliable. Tailored Insurance Plans for You.
+        </p>
+        <Button className="mt-6 px-6 py-3 bg-yellow-400 text-black rounded-xl shadow-lg hover:bg-yellow-300">
+          Get Your Free Quote
+        </Button>
+      </section>
+
+      {/* Insurance Options */}
+      <section className="py-16 px-6 max-w-6xl mx-auto grid gap-8 md:grid-cols-3">
+        {insurances.map((item, index) => (
+          <motion.div
+            key={index}
+            whileHover={{ scale: 1.05 }}
+            className="bg-white rounded-2xl shadow-md p-6"
+          >
+            <h2 className="text-xl font-semibold">{item.name}</h2>
+            <p className="mt-2 text-gray-600">{item.desc}</p>
+          </motion.div>
+        ))}
+      </section>
+
+      {/* Lead Form (Jornaya Integration Placeholder) */}
+      <section className="bg-white py-16 px-6">
+        <h2 className="text-3xl font-bold text-center mb-6">
+          Get Your Free Insurance Quote
+        </h2>
+        <form
+          onSubmit={handleSubmit}
+          className="max-w-lg mx-auto space-y-4 bg-gray-50 p-6 rounded-2xl shadow-md"
+        >
+          <input
+            type="text"
+            placeholder="Full Name"
+            className="w-full p-3 border rounded-xl"
+            value={formData.name}
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email Address"
+            className="w-full p-3 border rounded-xl"
+            value={formData.email}
+            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+            required
+          />
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            className="w-full p-3 border rounded-xl"
+            value={formData.phone}
+            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+            required
+          />
+          <select
+            className="w-full p-3 border rounded-xl"
+            value={formData.insuranceType}
+            onChange={(e) =>
+              setFormData({ ...formData, insuranceType: e.target.value })
+            }
+            required
+          >
+            <option value="">Select Insurance Type</option>
+            {insurances.map((item, idx) => (
+              <option key={idx} value={item.name}>
+                {item.name}
+              </option>
+            ))}
+          </select>
+          {/* Journaya Token Placeholder */}
+          <input type="hidden" name="jornaya_leadid" value="{LEAD_ID}" />
+          <Button
+            type="submit"
+            className="w-full py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-500"
+          >
+            Submit Quote Request
+          </Button>
+        </form>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-16 px-6 max-w-5xl mx-auto text-center">
+        <h2 className="text-3xl font-bold">Why Choose Get Yourself Insured?</h2>
+        <div className="grid gap-8 mt-8 md:grid-cols-3">
+          <Card>
+            <CardContent className="p-6">
+              <h3 className="font-semibold text-xl">Trusted Partners</h3>
+              <p className="text-gray-600 mt-2">
+                We work with leading insurance providers nationwide.
+              </p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-6">
+              <h3 className="font-semibold text-xl">Affordable Coverage</h3>
+              <p className="text-gray-600 mt-2">
+                Plans designed to fit your needs and budget.
+              </p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-6">
+              <h3 className="font-semibold text-xl">Fast & Easy</h3>
+              <p className="text-gray-600 mt-2">
+                Get your quotes in minutes with minimal hassle.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-blue-700 text-white py-6 text-center">
+        <p>© {new Date().getFullYear()} Get Yourself Insured. All Rights Reserved.</p>
+      </footer>
     </div>
-  </header>
-
-  <nav>
-    <a href="#started">How We Started</a>
-    <a href="#special">What's Special</a>
-    <a href="#choose">Why Choose Us</a>
-    <a href="#clients">Clients' Perspective</a>
-    <a href="#quote">Quote</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="started">
-    <h2>How We Started</h2>
-    <p>Started from a team of 5 to a team of 500, Drevanox provides exceptional services across US, UK & Austrialia...</p>
-    <div class="visual-section">
-      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcherryberryrms.com%2Fthe-vital-role-of-restaurant-call-center-in-lahore-pakistan%2F&psig=AOvVaw2RDm4pLYZLD-3y3QYEFwj2&ust=1744726483847000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOCcuuja14wDFQAAAAAdAAAAABAE" alt="Journey" />
-    </div>
-  </section>
-
-  <section id="special">
-    <h2>What's Special About Us</h2>
-    <p>We Operate 24/7 to provide seemless profit to our clients and partners.</p>
-    <div class="visual-section">
-      <img src="https://images.unsplash.com/photo-1556742400-b5c05c9b84b8" alt="Special Approach" />
-    </div>
-  </section>
-
-  <section id="choose">
-    <h2>Why Should People Choose Us?</h2>
-    <p>Because we're more than a service — we're an experience crafted to endure.</p>
-    <div class="visual-section">
-      <img src="https://images.unsplash.com/photo-1605810230434-7631cf222b5c" alt="Why Us" />
-    </div>
-  </section>
-
-  <section id="clients">
-    <h2>Why Our Clients Agree to Work for Us</h2>
-    <p>They don’t just stay — they advocate. They believe in what we build together.</p>
-    <div class="visual-section">
-      <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6" alt="Happy Clients" />
-    </div>
-  </section>
-
-  <section id="quote">
-    <div class="quote-text">
-      "The best business strategy is a satisfied customer."
-    </div>
-    <div class="quote-author">
-      — CEO, Drevanox
-    </div>
-  </section>
-
-  <section id="testimonials">
-    <h2>Testimonials</h2>
-    <p>“Drevanox changed the way we do business.” — A Satisfied Partner</p>
-    <p>“Unmatched clarity and results.” — Another Happy Client</p>
-    <div class="visual-section">
-      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Client Testimonials" />
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="First Name" required />
-      <input type="text" placeholder="Last Name" required />
-      <input type="text" placeholder="Skype ID" required />
-      <input type="text" placeholder="Contact Number" required />
-      <input type="email" placeholder="Email" required />
-      <textarea placeholder="Your Comment" rows="4"></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Drevanox. All rights reserved.</p>
-  </footer>
-
-  <script>
-    // Smooth scroll on nav links
-    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
-  </script>
-</body>
-</html>
+  );
+}
